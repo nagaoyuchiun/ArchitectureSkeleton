@@ -1,6 +1,6 @@
 ﻿using ArchitectureSkeleton.Model;
 
-namespace ArchitectureSkeleton.Contract
+namespace ArchitectureSkeleton.Contract.Handler
 {
     public interface IProductHandler
     {

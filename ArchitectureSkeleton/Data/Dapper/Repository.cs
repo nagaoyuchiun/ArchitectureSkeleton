@@ -1,9 +1,10 @@
 ﻿using ArchitectureSkeleton.Contract;
+using ArchitectureSkeleton.Contract.Repository;
 using System.Data;
 
 namespace ArchitectureSkeleton.Data.Dapper
 {
-    public class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IBaseRepository<T> where T : class
     {
         private readonly IDbConnection _connection;
         private IDbTransaction? _transaction;

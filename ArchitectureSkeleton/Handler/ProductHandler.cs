@@ -1,4 +1,5 @@
-﻿using ArchitectureSkeleton.Contract;
+﻿using ArchitectureSkeleton.Contract.Handler;
+using ArchitectureSkeleton.Contract.Repository;
 using ArchitectureSkeleton.Data.Dapper;
 using ArchitectureSkeleton.Model;
 using System.Data;
@@ -7,10 +8,10 @@ namespace ArchitectureSkeleton.Handler
 {
     public class ProductHandler : IProductHandler
     {
-        private readonly IRepository<Product> _productRepository;
+        private readonly IBaseRepository<Product> _productRepository;
         private readonly IDbConnection _connection;
 
-        public ProductHandler(IRepository<Product> productRepository, IDbConnection _connection)
+        public ProductHandler(IBaseRepository<Product> productRepository, IDbConnection _connection)
         {
             _productRepository = productRepository;
             this._connection = _connection;
