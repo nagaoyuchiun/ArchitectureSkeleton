@@ -477,3 +477,4 @@ $RECYCLE.BIN/
 *.lnk
 /ArchitectureSkeleton/obj
 /ArchitectureSkeleton/bin
+/.vs
