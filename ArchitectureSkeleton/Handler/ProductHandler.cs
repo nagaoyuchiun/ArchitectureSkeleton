@@ -8,10 +8,10 @@ namespace ArchitectureSkeleton.Handler
 {
     public class ProductHandler : IProductHandler
     {
-        private readonly IBaseRepository<Product> _productRepository;
+        private readonly ICommandRepository<Product> _productRepository;
         private readonly IDbConnection _connection;
 
-        public ProductHandler(IBaseRepository<Product> productRepository, IDbConnection _connection)
+        public ProductHandler(ICommandRepository<Product> productRepository, IDbConnection _connection)
         {
             _productRepository = productRepository;
             this._connection = _connection;

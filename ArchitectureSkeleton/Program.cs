@@ -15,7 +15,7 @@ builder.Services.AddScoped<IDbConnection>(serviceProvider =>
 
 builder.Services.AddControllers();
 
-builder.Services.AddScoped(typeof(IBaseRepository<>), typeof(ArchitectureSkeleton.Data.Dapper.Repository<>));
+builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(ArchitectureSkeleton.Data.Dapper.Repository<>));
 
 builder.Services.AddHandler();
 
