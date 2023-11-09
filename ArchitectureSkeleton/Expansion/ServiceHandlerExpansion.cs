@@ -1,5 +1,4 @@
 ﻿using ArchitectureSkeleton.Contract.Handler;
-using ArchitectureSkeleton.Handler;
 
 namespace ArchitectureSkeleton.Expansion
 {
@@ -7,7 +6,6 @@ namespace ArchitectureSkeleton.Expansion
     {
         public static IServiceCollection AddHandler(this IServiceCollection services)
         {
-            services.AddScoped<IProductHandler, ProductHandler>();
             return services;
         }
     }
