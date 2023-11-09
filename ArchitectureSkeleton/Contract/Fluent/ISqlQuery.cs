@@ -3,7 +3,7 @@ using Dapper;
 
 namespace ArchitectureSkeleton.Contract.Fluent;
 
-public interface ISqlQuery<MainTable>: IConditional<MainTable>
+public interface ISqlQuery<MainTable>: IConditional<MainTable>, IAlias<MainTable>
 {
     ISqlQuery<MainTable> Select(params string[] args);
     ISqlQuery<MainTable> Distinct();
