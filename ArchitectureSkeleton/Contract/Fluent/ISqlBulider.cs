@@ -9,6 +9,11 @@ namespace ArchitectureSkeleton.Contract.Fluent
         ISqlBulider<MainTable> SetSystemProperty(string prop);
         ISqlBulider<MainTable> SetDisabledProperty(string prop);
 
+        string Query(int id, ISqlBulider<MainTable> bulider);
+        string Insert(MainTable table, ISqlBulider<MainTable> bulider);
+        string Update(MainTable table, ISqlBulider<MainTable> bulider);
+        string Delete(int id, ISqlBulider<MainTable> bulider);
+
         ISqlQuery<MainTable> Query();
         ISqlInsert<MainTable> Insert();
         ISqlUpdate<MainTable> Update();
