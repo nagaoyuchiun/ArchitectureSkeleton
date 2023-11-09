@@ -1,5 +1,4 @@
-﻿using ArchitectureSkeleton.Contract.Repository;
-using ArchitectureSkeleton.Expansion;
+﻿using ArchitectureSkeleton.Expansion;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -14,8 +13,6 @@ builder.Services.AddScoped<IDbConnection>(serviceProvider =>
 });
 
 builder.Services.AddControllers();
-
-builder.Services.AddScoped(typeof(ICommandRepository<>), typeof(ArchitectureSkeleton.Data.Dapper.Repository<>));
 
 builder.Services.AddHandler();
 
