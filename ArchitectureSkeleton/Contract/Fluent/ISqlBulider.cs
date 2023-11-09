@@ -10,8 +10,8 @@ namespace ArchitectureSkeleton.Contract.Fluent
         ISqlBulider<MainTable> SetDisabledProperty(string prop);
 
         ISqlQuery<MainTable> Query();
-        IInsert<MainTable> Insert();
-        IUpdate<MainTable> Update();
-        IDelete<MainTable> Delete();
+        ISqlInsert<MainTable> Insert();
+        ISqlUpdate<MainTable> Update();
+        ISqlDelete<MainTable> Delete();
     }
 }
