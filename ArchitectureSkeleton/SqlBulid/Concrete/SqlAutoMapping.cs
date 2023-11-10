@@ -1,6 +1,6 @@
-﻿using ArchitectureSkeleton.Fluent.Contract;
+﻿using ArchitectureSkeleton.SqlBulid.Contract;
 
-namespace ArchitectureSkeleton.Fluent.Concrete
+namespace ArchitectureSkeleton.SqlBulid.Concrete
 {
     public class SqlAutoMapping<Table> : ISqlAutoMapping<Table>
     {

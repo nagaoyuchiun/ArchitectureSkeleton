@@ -1,4 +1,4 @@
-﻿namespace ArchitectureSkeleton.Fluent.Contract.Cell;
+﻿namespace ArchitectureSkeleton.SqlBulid.Contract.Cell;
 
 public enum Comparisons
 {

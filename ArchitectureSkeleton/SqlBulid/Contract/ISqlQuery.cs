@@ -1,7 +1,7 @@
-﻿using ArchitectureSkeleton.Fluent.Contract.Cell;
+﻿using ArchitectureSkeleton.SqlBulid.Contract.Cell;
 using Dapper;
 
-namespace ArchitectureSkeleton.Fluent.Contract;
+namespace ArchitectureSkeleton.SqlBulid.Contract;
 
 public interface ISqlQuery<MainTable> : IConditional<MainTable>, IAlias<MainTable>
 {

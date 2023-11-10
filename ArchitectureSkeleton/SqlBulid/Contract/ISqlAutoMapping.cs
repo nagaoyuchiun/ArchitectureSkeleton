@@ -1,4 +1,4 @@
-﻿namespace ArchitectureSkeleton.Fluent.Contract
+﻿namespace ArchitectureSkeleton.SqlBulid.Contract
 {
     public interface ISqlAutoMapping<Table>
     {

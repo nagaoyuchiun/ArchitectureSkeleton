@@ -1,4 +1,6 @@
 ﻿using ArchitectureSkeleton.Expansion;
+using ArchitectureSkeleton.SqlBulid.Concrete;
+using ArchitectureSkeleton.SqlBulid.Contract;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -13,6 +15,12 @@ builder.Services.AddScoped<IDbConnection>(serviceProvider =>
 });
 
 builder.Services.AddControllers();
+
+builder.Services.AddScoped(typeof(ISqlQuery<>), typeof(SqlQuery<>));
+builder.Services.AddScoped(typeof(ISqlInsert<>), typeof(SqlInsert<>));
+builder.Services.AddScoped(typeof(ISqlUpdate<>), typeof(SqlUpdate<>));
+builder.Services.AddScoped(typeof(ISqlDelete<>), typeof(SqlDelete<>));
+builder.Services.AddScoped<ISqlBulider, SqlBulider>();
 
 builder.Services.AddHandler();
 

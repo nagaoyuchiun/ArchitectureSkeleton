@@ -1,6 +1,6 @@
 ﻿using Dapper;
 
-namespace ArchitectureSkeleton.Fluent.Contract.Cell
+namespace ArchitectureSkeleton.SqlBulid.Contract.Cell
 {
     public interface IParam
     {

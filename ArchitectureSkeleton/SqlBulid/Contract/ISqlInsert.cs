@@ -1,6 +1,6 @@
-﻿using ArchitectureSkeleton.Fluent.Contract.Cell;
+﻿using ArchitectureSkeleton.SqlBulid.Contract.Cell;
 
-namespace ArchitectureSkeleton.Fluent.Contract
+namespace ArchitectureSkeleton.SqlBulid.Contract
 {
     public interface ISqlInsert<MainTable> : IParam, IAlias<MainTable>
     {
