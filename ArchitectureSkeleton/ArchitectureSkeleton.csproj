@@ -9,6 +9,29 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Handler\Contract\Repository\**" />
+    <Compile Remove="Data\**" />
+    <Compile Remove="Middleware\**" />
+    <Compile Remove="Validator\**" />
+    <Compile Remove="ViewModel\**" />
+    <Content Remove="Handler\Contract\Repository\**" />
+    <Content Remove="Data\**" />
+    <Content Remove="Middleware\**" />
+    <Content Remove="Validator\**" />
+    <Content Remove="ViewModel\**" />
+    <EmbeddedResource Remove="Handler\Contract\Repository\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <EmbeddedResource Remove="Middleware\**" />
+    <EmbeddedResource Remove="Validator\**" />
+    <EmbeddedResource Remove="ViewModel\**" />
+    <None Remove="Handler\Contract\Repository\**" />
+    <None Remove="Data\**" />
+    <None Remove="Middleware\**" />
+    <None Remove="Validator\**" />
+    <None Remove="ViewModel\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.15" />
     <PackageReference Include="Dapper.Contrib" Version="2.0.78" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
@@ -18,12 +41,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Contract\Repository\" />
-    <Folder Include="Data\" />
-    <Folder Include="Handler\" />
-    <Folder Include="Middleware\" />
-    <Folder Include="ViewModel\" />
-    <Folder Include="Validator\" />
+    <Folder Include="Handler\Concrete\" />
+    <Folder Include="Repository\Contract\" />
+    <Folder Include="Repository\Concrete\" />
   </ItemGroup>
 
 </Project>

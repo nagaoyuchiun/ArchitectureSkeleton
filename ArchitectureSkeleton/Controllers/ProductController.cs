@@ -1,4 +1,4 @@
-﻿using ArchitectureSkeleton.Contract.Handler;
+﻿using ArchitectureSkeleton.Handler.Contract;
 using ArchitectureSkeleton.Model;
 using Microsoft.AspNetCore.Mvc;
 

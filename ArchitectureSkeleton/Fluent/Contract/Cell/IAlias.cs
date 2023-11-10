@@ -1,4 +1,4 @@
-﻿namespace ArchitectureSkeleton.Contract.Fluent.Cell
+﻿namespace ArchitectureSkeleton.Fluent.Contract.Cell
 {
     public interface IAlias<MainTable>
     {

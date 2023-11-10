@@ -1,6 +1,6 @@
-﻿using ArchitectureSkeleton.Contract.Fluent.Cell;
+﻿using ArchitectureSkeleton.Fluent.Contract.Cell;
 
-namespace ArchitectureSkeleton.Contract.Fluent
+namespace ArchitectureSkeleton.Fluent.Contract
 {
     public interface ISqlBulider : IFormSql
     {

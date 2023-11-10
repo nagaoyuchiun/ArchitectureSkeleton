@@ -1,6 +1,6 @@
 ﻿using Dapper;
 
-namespace ArchitectureSkeleton.Contract.Fluent.Cell
+namespace ArchitectureSkeleton.Fluent.Contract.Cell
 {
     public interface IConditional<MainTable> : IParam
     {

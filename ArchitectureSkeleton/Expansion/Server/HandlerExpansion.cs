@@ -1,8 +1,6 @@
-﻿using ArchitectureSkeleton.Contract.Handler;
-
-namespace ArchitectureSkeleton.Expansion
+﻿namespace ArchitectureSkeleton.Expansion
 {
-    public static class ServiceHandlerExpansion
+    public static class HandlerExpansion
     {
         public static IServiceCollection AddHandler(this IServiceCollection services)
         {

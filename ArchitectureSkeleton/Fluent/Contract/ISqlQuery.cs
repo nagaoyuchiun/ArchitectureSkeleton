@@ -1,9 +1,9 @@
-﻿using ArchitectureSkeleton.Contract.Fluent.Cell;
+﻿using ArchitectureSkeleton.Fluent.Contract.Cell;
 using Dapper;
 
-namespace ArchitectureSkeleton.Contract.Fluent;
+namespace ArchitectureSkeleton.Fluent.Contract;
 
-public interface ISqlQuery<MainTable>: IConditional<MainTable>, IAlias<MainTable>
+public interface ISqlQuery<MainTable> : IConditional<MainTable>, IAlias<MainTable>
 {
     ISqlQuery<MainTable> Select(params string[] args);
     ISqlQuery<MainTable> Distinct();
